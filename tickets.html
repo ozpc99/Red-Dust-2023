@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Dust Festival</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="home.html">
+                <img src="assets/images/logo.gif" height="100px">
+            </a>
+            <div class="navbrand-header">
+                <h5>26<sup>th</sup> - 27<sup>th</sup> August</h5>
+                <h6><span id="countdown"></span></h6>
+            </div>
+
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="offcanvasRight" onclick="cog()">
+                <i class="fa-solid fa-gear" id="cog"></i>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+                <ul class="nav nav-underline">
+                    <li class="nav-item">
+                        <a href="home.html" class="nav-link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="tickets.html" class="nav-link active">
+                            Tickets
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="info.html" class="nav-link">
+                            Info
+                        </a>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!--Body Container-->
+    <div id="body-container" class="container-fluid tickets">
+        <h1>Tickets</h1>
+
+                <!--Ticket Prices-->
+                <a data-bs-toggle="collapse" href="#ticket-prices-collapse" onclick="caret()">
+                    <h2 class="mt-3">Ticket Prices <i class="fa-solid fa-caret-right" id="caret"></i></h2>
+                </a>
+        
+                <!--Ticket Prices Collapse-->
+                <div class="collapse" id="ticket-prices-collapse">
+                    <table class="table table-bordered">
+                        <tr>
+                            <th></th>
+                            <th>Full Weekender</th>
+                            <th>Day Ticket</th>
+                        </tr>
+                        <tr>
+                            <th><i class="fa-solid fa-user"></i> Adult</th>
+                            <td id="adultWeekendPrice"></td>
+                            <td id="adultDayPrice"></td>
+                        </tr>
+                        <tr>
+                            <th><i class="fa-solid fa-user-graduate"></i> Student</th>
+                            <td id="studentWeekendPrice"></td>
+                            <td id="studentDayPrice"></td>
+                        </tr>
+                        <tr>
+                            <th><i class="fa-solid fa-person"></i> Young Person <small>(16-17)</small></th>
+                            <td id="youngPersonWeekendPrice"></td>
+                            <td id="youngPersonDayPrice"></td>
+                        </tr>
+                        <tr>
+                            <th><i class="fa-solid fa-person-snowboarding"></i> Teen <small>(13-15)</small></th>
+                            <td id="teenWeekendPrice"></td>
+                            <td id="teenDayPrice"></td>
+                        </tr>
+                        <tr>
+                            <th><i class="fa-solid fa-child-reaching"></i> Child <small>(6-12)</small></th>
+                            <td id="childWeekendPrice"></td>
+                            <td id="childDayPrice"></td>
+                        </tr>
+                        <tr>
+                            <th><i class="fa-solid fa-baby"></i> Infant <small>(5 and under)</small></th>
+                            <td id="infantWeekendPrice"></td>
+                            <td id="infantDayPrice"></td>
+                        </tr>
+                    </table>
+        
+                    <!--Add-Ons-->
+                    <a data-bs-toggle="collapse" href="#addons-collapse" id="add-ons" onclick="caret1(); plusRotate()">
+                        <h4><i class="fa-solid fa-plus fa-rotate-by" id="plus"></i> Add-ons <i class="fa-solid fa-caret-right"
+                                id="caret1"></i></h4>
+                    </a>
+                    <!--Add-Ons Collapse-->
+                    <div class="collapse" id="addons-collapse">
+                        <table class="table table-bordered">
+                            <tr>
+                                <th><i class="fa-solid fa-square-parking"></i> Parking <small>per vehicle. (max 3)</small></th>
+                                <td id="parkingPrice"></td>
+                                <td><small>(full weekend)</small></td>
+                            </tr>
+                            <tr>
+                                <th><i class="fa-solid fa-campground"></i> Camping <small>per tent. (max 3)</small></th>
+                                <td id="campingPrice"></td>
+                                <td><small>(full weekend)</small></td>
+                            </tr>
+                            <tr>
+                                <th><i class="fa-solid fa-caravan"></i> Caravan / Motorhome <small>(incl. water and electric
+                                        hookup)</small></th>
+                                <td id="liveInVehiclePrice"></td>
+                                <td><small>(per night)</small></td>
+                            </tr>
+                        </table>
+                    </div>
+        
+                </div>
+
+        <p>Tickets are available to purchase through one of our official Red Dust ticket vendors around Consett.
+            These vendors earn commission when you buy through them, supporting local businesses.
+        </p>
+
+        <!--Vendors-->
+        <h3>Official Vendors</h3>
+        <ul>
+            <li>
+                Consett Records & Musical Instruments
+            </li>
+            <li>
+                Consett Brewery
+            </li>
+            <li>
+                Gavin's Burger Co.
+            </li>
+            <li>
+                Middle Street Cafe
+            </li>
+        </ul>
+
+        <p>If you live further afield, don't worry! You can buy tickets directly from us.
+            <br>
+            Once you submit your order, we will be back in touch
+            and a secure card payment will be taken over telephone.
+        </p>
+        <ul>
+            <li>
+                <strong>Paper ticket:</strong> your tickets will be sent by Royal Mail <small><em>(1<sup>st</sup>
+                        Class Signed For)</em></small>
+                to your address within 5 working days at a postal fee of: <span id="postagePrice"></span>
+            </li>
+            <li>
+                <strong>e-ticket:</strong> your tickets will be emailed to you within 3 working days.
+            </li>
+        </ul>
+
+        <!--Buy Tickets-->
+        <a data-bs-toggle="collapse" href="#contact-collapse" class="btn btn-primary mb-3" onclick="caret2()">
+            Buy Tickets <i class="fa-solid fa-caret-right" id="caret2"></i>
+        </a>
+        <!--Buy Tickets Collapse-->
+        <div class="collapse mt-3 mb-3" id="contact-collapse">
+
+            <form action="https://formsubmit.co/reddust.fest@gmail.com" method="POST">
+
+                <input type="hidden" name="_subject" value="Ticket Order">
+
+                <h3>Your Details:</h3>
+
+                <div class="form-floating mb-3">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Name" required
+                        oninvalid="this.setCustomValidity('Please Enter Your Name')"
+                        oninput="this.setCustomValidity('')">
+                    <label for="name">Name</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="email" name="email" class="form-control" id="email" placeholder="Email" required
+                        oninvalid="this.setCustomValidity('Please Enter Your Email Address')"
+                        oninput="this.setCustomValidity('')">
+                    <label for="email">Email</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="tel" name="telephone" class="form-control" id="telephone" placeholder="Phone" required
+                        oninvalid="this.setCustomValidity('Please Enter Your Phone Number')"
+                        oninput="this.setCustomValidity('')">
+                    <label for="telephone">Phone</label>
+                </div>
+
+
+                <div class="form-floating mb-3">
+                    <textarea name="message" class="form-control" id="message" style="height: 100px;"
+                        placeholder="Your Message"></textarea>
+                    <label for="message">Your Message: <small>(optional)</small></label>
+                </div>
+
+
+                <h3>Choose Your Tickets:</h3>
+                <!--Full Weekender-->
+                <a data-bs-toggle="collapse" href="#fw-collapse" aria-expanded="false"
+                    aria-controls="collapseFullWeekender" onclick="caret3()">
+                    <h5><i class="fa-solid fa-calendar-week"></i> Full Weekender <i class="fa-solid fa-caret-right" id="caret3"></i>
+                    </h5>
+                </a>
+                <!--Full Weekender Collapse-->
+                <div class="collapse" id="fw-collapse">
+
+                    <label for="adult-wknd-quantity"><strong><i class="fa-solid fa-user"></i> Adult <small>(18+)</small>
+                            : </strong><span id="formAdultWeekendPrice"></span></label>
+                    <div class="input-group mb-3 w-50">
+                        <select name="adult-wknd-quantity" id="adult-wknd-quantity" class="form-select"
+                            onchange="getAdultWkndTotal(this.value)">
+                            <option value="0" selected>-</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <span class="input-group-text">£</span>
+                        <input type="number" class="form-control" id="a-w-total" name="adult-weekend-total" readonly>
+                    </div>
+
+                    <label for="student-wknd-quantity"><strong><i class="fa-solid fa-user-graduate"></i> Student:
+                        </strong><span id="formStudentWeekendPrice"></span></label>
+                    <div class="input-group mb-3 w-50">
+                        <select name="st-wknd-quantity" id="st-wknd-quantity" class="form-select"
+                            onchange="getStudentWkndTotal(this.value)">
+                            <option value="0" selected>-</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <span class="input-group-text">£</span>
+                        <input type="number" class="form-control" id="st-w-total" name="student-weekend-total" readonly>
+                    </div>
+
+                    <label for="young-person-wknd-quantity"><strong><i class="fa-solid fa-person"></i> Young Person
+                            <small>(16-17)</small> : </strong><span id="formYoungPersonWeekendPrice"></span></label>
+                    <div class="input-group mb-3 w-50">
+                        <select name="yp-wknd-quantity" id="yp-wknd-quantity" class="form-select"
+                            onchange="getYpWkndTotal(this.value)">
+                            <option value="0" selected>-</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <span class="input-group-text">£</span>
+                        <input type="number" class="form-control" id="yp-w-total" name="young-person-weekend-total"
+                            readonly>
+                    </div>
+
+                    <label for="teen-wknd-quantity"><strong><i class="fa-solid fa-person-snowboarding"></i> Teen
+                            <small>(13-15)</small> : </strong><span id="formTeenWeekendPrice"></span></label>
+                    <div class="input-group mb-3 w-50">
+                        <select name="teen-wknd-quantity" id="teen-wknd-quantity" class="form-select"
+                            onchange="getTeenWkndTotal(this.value)">
+                            <option value="0" selected>-</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <span class="input-group-text">£</span>
+                        <input type="number" class="form-control" id="t-w-total" name="teen-weekend-total" readonly>
+                    </div>
+
+                    <label for="child-wknd-quantity"><strong><i class="fa-solid fa-child-reaching"></i> Child
+                            <small>(6-12)</small> : </strong><span id="formChildWeekendPrice"></span></label>
+                    <div class="input-group mb-3 w-50">
+                        <select name="child-wknd-quantity" id="child-wknd-quantity" class="form-select"
+                            onchange="getChildWkndTotal(this.value)">
+                            <option value="0" selected>-</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <span class="input-group-text">£</span>
+                        <input type="number" class="form-control" id="c-w-total" name="child-weekend-total" readonly>
+                    </div>
+
+                    <label for="infant-wknd-quantity"><strong><i class="fa-solid fa-baby"></i> Infant
+                            <small>(5 and under)</small> : </strong><span id="formInfantWeekendPrice"></span></label>
+                    <div class="input-group mb-3 w-50">
+                        <select name="infant-wknd-quantity" id="infant-wknd-quantity" class="form-select"
+                            onchange="getInfantWkndTotal(this.value)">
+                            <option value="0" selected>-</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <span class="input-group-text">£</span>
+                        <input type="number" class="form-control" id="i-w-total" name="infant-weekend-total" readonly>
+                    </div>
+                </div>
+
+                <!--Day Ticket-->
+                <a data-bs-toggle="collapse" href="#day-collapse" onclick="caret4()">
+                    <h5><i class="fa-solid fa-calendar-day"></i> Day Ticket <i class="fa-solid fa-caret-right" id="caret4"></i></h5>
+                </a>
+                <!--Day Ticket Collapse-->
+                <div class="collapse" id="day-collapse">
+
+                    <label for="adult-day-quantity"><strong><i class="fa-solid fa-user"></i> Adult <small>(18+)</small>
+                            : </strong><span id="formAdultDayPrice"></span></label>
+                    <div class="input-group mb-3 w-50">
+                        <select name="adult-day-quantity" id="adult-day-quantity" class="form-select"
+                            onchange="getAdultDayTotal(this.value)">
+                            <option value="0" selected>-</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <span class="input-group-text">£</span>
+                        <input type="number" class="form-control" id="a-d-total" name="adult-day-total" readonly>
+                    </div>
+
+                    <label for="student-day-quantity"><strong><i class="fa-solid fa-user-graduate"></i> Student :
+                        </strong><span id="formStudentDayPrice"></span></label>
+                    <div class="input-group mb-3 w-50">
+                        <select name="student-day-quantity" id="student-day-quantity" class="form-select"
+                            onchange="getStudentDayTotal(this.value)">
+                            <option value="0" selected>-</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <span class="input-group-text">£</span>
+                        <input type="number" class="form-control" id="st-d-total" name="student-day-total" readonly>
+                    </div>
+
+                    <label for="young-person-day-quantity"><strong><i class="fa-solid fa-person"></i> Young Person
+                            <small>(16-17)</small> : </strong><span id="formYoungPersonDayPrice"></span></label>
+                    <div class="input-group mb-3 w-50">
+                        <select name="young-person-day-quantity" id="young-person-day-quantity" class="form-select"
+                            onchange="getYpDayTotal(this.value)">
+                            <option value="0" selected>-</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <span class="input-group-text">£</span>
+                        <input type="number" class="form-control" id="yp-d-total" name="young-person-day-total"
+                            readonly>
+                    </div>
+
+                    <label for="teen-day-quantity"><strong><i class="fa-solid fa-person-snowboarding"></i> Teen
+                            <small>(13-15)</small> : </strong><span id="formTeenDayPrice"></span></label>
+                    <div class="input-group mb-3 w-50">
+                        <select name="teen-day-quantity" id="teen-day-quantity" class="form-select"
+                            onchange="getTeenDayTotal(this.value)">
+                            <option value="0" selected>-</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <span class="input-group-text">£</span>
+                        <input type="number" class="form-control" id="t-d-total" name="teen-day-total" readonly>
+                    </div>
+
+                    <label for="child-day-quantity"><strong><i class="fa-solid fa-child-reaching"></i> Child
+                            <small>(6-12)</small> : </strong><span id="formChildDayPrice"></span></label>
+                    <div class="input-group mb-3 w-50">
+                        <select name="child-day-quantity" id="child-day-quantity" class="form-select"
+                            onchange="getChildDayTotal(this.value)">
+                            <option value="0" selected>-</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <span class="input-group-text">£</span>
+                        <input type="number" class="form-control" id="c-d-total" name="child-day-total" readonly>
+                    </div>
+
+                    <label for="infant-day-quantity"><strong><i class="fa-solid fa-baby"></i> Infant <small>(5 and
+                                under)</small> : </strong><span id="formInfantDayPrice"></span></label>
+                    <div class="input-group mb-3 w-50">
+                        <select name="infant-day-quantity" id="infant-day-quantity" class="form-select"
+                            onchange="getInfantDayTotal(this.value)">
+                            <option value="0" selected>-</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <span class="input-group-text">£</span>
+                        <input type="number" class="form-control" id="i-d-total" name="infant-day-total" readonly>
+                    </div>
+
+                </div>
+
+                <!--Add-ons-->
+                <a data-bs-toggle="collapse" href="#buy-addons-collapse" onclick="caret5(); plusRotate1()">
+                    <h5><i class="fa-solid fa-plus fa-rotate-by" id="plus1"></i> Add-ons <i
+                            class="fa-solid fa-caret-right" id="caret5"></i></h5>
+                </a>
+
+                <!--Buy-Add-ons-Collapse-->
+                <div class="collapse" id="buy-addons-collapse">
+
+                    <!--Parking-->
+                    <div class="form-check form-switch">
+                        <input type="checkbox" role="switch" name="parking" class="form-check-input mb-3" id="parking"
+                            data-bs-toggle="collapse" href="#num-of-vehicles">
+
+                        <label for="parking" class="form-check-label"><strong><i class="fa-solid fa-square-parking"></i>
+                                Parking:</strong> <span id="formParkingPrice"></span> <small>(full
+                                weekend)</small></label>
+                    </div>
+                    <!--Parking Collapse-->
+                    <div class="collapse" id="num-of-vehicles">
+                        <label for="vehicles-quantity" class="form-check-label">How many vehicles? <small>(max.
+                                3)</small></label>
+
+                        <div class="input-group mb-3 w-50">
+                            <select name="vehicles-quantity" id="vehicles-quantity" class="form-select"
+                                onchange="getParkingTotal(this.value)">
+                                <option value="0" selected>-</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                            <span class="input-group-text">£</span>
+                            <input type="number" class="form-control" id="parking-total" name="parking-total" readonly>
+                        </div>
+                    </div>
+
+                    <!--Camping-->
+                    <div class="form-check form-switch">
+                        <input type="checkbox" role="switch" name="camping" class="form-check-input mb-3" id="camping"
+                            data-bs-toggle="collapse" href="#num-of-tents">
+
+                        <label for="camping" class="form-check-label"><strong><i class="fa-solid fa-campground"></i>
+                                Camping: </strong><span id="formCampingPrice"></span> <small>(full
+                                weekend)</small></label>
+                    </div>
+                    <!--Camping Collapse-->
+                    <div class="collapse" id="num-of-tents">
+                        <label for="tents-quantity">How many tents? <small>(max. 3)</small></label>
+
+                        <div class="input-group mb-3 w-50">
+                            <select name="tents-quantity" id="tents-quantity" class="form-select"
+                                onchange="getCampingTotal(this.value)">
+                                <option value="0" selected>-</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                            <span class="input-group-text">£</span>
+                            <input type="number" class="form-control" id="camping-total" name="camping-total" readonly>
+                        </div>
+                    </div>
+
+                    <!--Live in Vehicles-->
+                    <div class="form-check form-switch">
+                        <input type="checkbox" role="switch" name="live-in-vehicle" class="form-check-input"
+                            id="live-in-vehicle" data-bs-toggle="collapse" href="#liv-quantity">
+
+                        <label for="live-in-vehicle" class="form-check-label"><strong><i
+                                    class="fa-solid fa-caravan"></i>
+                                Caravans & Motorhomes: </strong> <span id="formLiveInVehiclePrice"></span> per night
+                            <small> (includes water & electric hookup)</small>
+                        </label>
+                    </div>
+                    <!--Live in Vehicles Collapse-->
+                    <div class="collapse" id="liv-quantity">
+                        <label for="liv-quantity">How many nights? <small>(max. 3 Fri-Sun)</small></label>
+
+                        <div class="input-group mb-3 w-50">
+                            <select name="liv-quantity" id="liv-quantity" class="form-select"
+                                onchange="getLiveInVehicleTotal(this.value)">
+                                <option value="0" selected>-</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                            <span class="input-group-text">£</span>
+                            <input type="number" class="form-control" id="liv-total" name="liv-total" readonly>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--Ticket Type-->
+                <h4>Ticket Type:</h4>
+                <div class="form-check form-switch">
+
+                    <input type="checkbox" role="switch" class="form-check-input" name="e-tickets" id="e-tickets"
+                        checked onclick="eTicketIcon(); toggleTicketType(); pTicketsPrice()">
+
+                    <label for="e-tickets" class="form-check-label"><strong><i class="fa-solid fa-envelope-circle-check"
+                                id="e-ticket-icon"></i>
+                            e-tickets</strong>
+                    </label>
+
+                </div>
+                <div class="form-check form-switch">
+
+                    <input type="checkbox" role="switch" class="form-check-input" name="Paper Tickets"
+                        id="paper-tickets" onchange="addPaperTickets()" readonly>
+
+                    <label for="paper-tickets" class="form-check-label"><strong> <i class="fa-solid fa-ticket"></i>
+                            Paper Tickets</strong><span id="paperTicketsForm"></span>
+                    </label>
+                    <span id="p-tickets-total"></span>
+                </div>
+
+                <input type="hidden" name="_next" value="/booking-confirmed.html">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="box">
+
+                <input type="checkbox" name="confirmed" id="confirmed" required>
+                <label for="checkbox">I confirm the information I have entered is correct</label>
+                <br>
+                <button type="submit" class="btn btn-primary mt-3">Book Tickets!</button>
+            </form>
+
+        </div>
+
+        <!--Body Container End-->
+    </div>
+
+   
+    <div class="divider"></div>
+    <!--Footer-->
+    <footer class="container">
+        <div class="row mt-3 align-items-center">
+            <div class="col text-center">
+                <a href="mailto:reddust.fest@gmail.com?subject=General Enquiry">
+                    <i class="fa-solid fa-envelope"></i>
+                    reddust.fest@gmail.com
+                </a>
+            </div>
+            <div class="col text-center">
+                <a href="" target="_blank">
+                    <i class="fa-brands fa-spotify"></i>
+                    Follow us on Spotify!
+                </a>
+            </div>
+            <div class="col-sm mt-3">
+                <h6>Sign up to our newsletter!</h6>
+                <form action="https://formsubmit.co/reddust.fest@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="Mailing List Signup">
+
+                    <div class="input-group mb-3">
+                        <input type="email" name="newsletter-email" id="newsletter-email" class="form-control"
+                            placeholder="Email Address" required
+                            oninvalid="this.setCustomValidity('Please Enter Your Email Address')"
+                            oninput="this.setCustomValidity('')">
+                        <button class="btn btn-primary" type="submit">Sign Up!</button>
+                    </div>
+                    <input type="hidden" name="_next" value="/signup-success.html">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="box">
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <!--Script-->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"> //Bootstrap Script</script>
+    <script src="https://kit.fontawesome.com/abda6128c4.js" crossorigin="anonymous"> //Font Awesome Script</script>
+
+    <script> //Custom Script
+        //Caret Rotates onclick:
+        function caret() {
+            const caret = document.getElementById("caret");
+            caret.classList.toggle("fa-rotate-90");
+        }
+        function caret1() {
+            const caret1 = document.getElementById("caret1");
+            caret1.classList.toggle("fa-rotate-90");
+        }
+        function caret2() {
+            const caret2 = document.getElementById("caret2");
+            caret2.classList.toggle("fa-rotate-90");
+        }
+        function caret3() {
+            const caret3 = document.getElementById("caret3");
+            caret3.classList.toggle("fa-rotate-90");
+        }
+        function caret4() {
+            const caret4 = document.getElementById("caret4");
+            caret4.classList.toggle("fa-rotate-90");
+        }
+        function caret5() {
+            const caret5 = document.getElementById("caret5");
+            caret5.classList.toggle("fa-rotate-90");
+        }
+        //FA Plus Icon Rotates onclick:
+        function plusRotate() {
+            const plus = document.getElementById("plus");
+            plus.classList.toggle("rotated");
+        }
+        function plusRotate1() {
+            const plus1 = document.getElementById("plus1");
+            plus1.classList.toggle("rotated");
+        }
+        function eTicketIcon() {
+            //e-ticket icon changes onclick
+            const eTicketIcon = document.getElementById("e-ticket-icon");
+            eTicketIcon.classList.toggle("fa-envelope");
+        }
+    </script>
+    <script defer src="assets/javascript/script.js">//Custom Script</script>
+    <script defer src="assets/javascript/ticketPrices.js">//Custom Script</script>
+    <script defer src="assets/javascript/ticketTotal.js">//Custom Script</script>
+</body>
+
+</html>
