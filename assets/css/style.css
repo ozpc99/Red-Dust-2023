@@ -1,0 +1,248 @@
+/*Fonts
+- Oswald
+- Ysabeau SC
+- Amatic SC
+*/
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Oswald:wght@200;300;400;500;600;700&family=Ysabeau+SC:wght@1;100;200;300;400;500;600;700;800;900;1000&display=swap');
+
+:root {
+    /*Colour Pallet*/
+    --bg-color-1: rgb(189, 181, 155);
+    --bg-color-2: rgb(217, 211, 191);
+    --bg-color-3: rgb(255, 248, 224); 
+    --theme-color-1: rgb(245, 207, 129);
+    --theme-color-2: rgb(255, 193, 73);
+    --theme-color-3: rgb(218, 112, 49);
+    --theme-color-4: rgb(188, 73, 35);
+    --theme-color-5: rgb(139, 14, 0);
+    --theme-color-6: rgb(102, 43, 33);
+    --theme-color-7: rgb(93, 150, 122);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Oswald', sans-serif !important;
+    background-color: var(--bg-color-1) !important;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body a {
+    text-decoration: none;
+    color: var(--theme-color-6);
+}
+
+body a:hover {
+    color: var(--theme-color-5);
+}
+
+.divider {
+    width: 100%;
+    height: 2rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: solid rgba(0, 0, 0, 0.15);
+    border-width: 1px 0;
+    box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+    inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+}
+.divider::after, ::before {
+    box-sizing: border-box;
+}
+
+/*Override Bootstrap Button Style*/
+.btn-primary {
+    text-decoration: none;
+    color: #fff !important;
+    --bs-btn-hover-color: #fff !important;
+    --bs-btn-bg: var(--theme-color-5) !important;
+    --bs-btn-hover-bg: var(--theme-color-6) !important;
+    --bs-btn-border-color: var(--theme-color-5) !important;
+    --bs-btn-hover-border-color: var(--theme-color-6) !important;
+}
+
+.btn-secondary {
+    text-decoration: none;
+    color: #fff;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-bg: var(--theme-color-4) !important;
+    --bs-btn-hover-bg: var(--theme-color-3) !important;
+    --bs-btn-border-color: var(--theme-color-4) !important;
+    --bs-btn-hover-border-color: var(--theme-color-3) !important;
+}
+
+/*Nav*/
+nav {
+    font-family: 'Oswald', sans-serif;
+    background-color: #bdb59b;
+    font-size: 24px;
+}
+
+.nav-underline {
+    --bs-nav-link-color: var(--theme-color-5) !important;
+    --bs-nav-link-hover-color: var(--theme-color-6) !important;
+    --bs-nav-underline-link-active-color: var(--theme-color-6) !important;
+}
+
+.navbrand-header {
+    color: var(--theme-color-6);
+    margin-left: 110px;
+    position: absolute;
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+.navbar-toggler:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.navbar-toggler i {
+    font-size: 30px;
+    color: var(--theme-color-6);
+}
+
+
+/*Hero Image & Text*/
+.hero {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+}
+
+.hero-body {
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*Line-Up*/
+#lineup-container {
+    margin: 10px 10px 10px 10px;
+    font-family: 'Oswald', sans-serif;
+    background-color: var(--bg-color-2);
+    border: double 10px #222;
+}
+
+.lineup {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.lineup-h1 {
+    font-family: 'Oswald', sans-serif;
+}
+
+.lineup-body {
+    font-family: 'Ysabeau SC', sans-serif;
+}
+
+.lineup-body ul {
+    font-family: sans-serif;
+}
+
+.lineup ul {
+    list-style: none;
+}
+
+.lineup-body li {
+    font-family: 'Oswald', sans-serif;
+}
+
+.lineup a {
+    color: #222;
+    text-decoration: none;
+}
+
+.lineup a:hover {
+    color: var(--theme-color-4);
+}
+
+#roxy-header {
+    text-decoration: none;
+    color: black;
+}
+
+/*Tickets*/
+.tickets a {
+    text-decoration: none;
+    color: black;
+}
+
+/*Info*/
+.info a {
+    color: black;
+    text-decoration: none;
+}
+
+/*Parking Bullet Point Colours*/
+#parking li:first-child::marker {
+    color: #bc4923;
+}
+
+#parking li:nth-child(2)::marker {
+    color: blue;
+}
+
+#parking li:nth-child(3)::marker {
+    color: red;
+}
+
+#parking li:nth-child(4)::marker {
+    color: green;
+}
+
+#add-ons {
+    color: black;
+    text-decoration: none;
+}
+
+/*Plus Icon Rotated*/
+.rotated {
+    --fa-rotate-angle: 45deg;
+}
+
+#id-collapse ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    font-family: 'Oswald', sans-serif;
+}
+
+#paper-tickets {
+    pointer-events: none;
+}
+
+.form-check-label {
+    pointer-events: none;
+}
+
+/*Media Queries*/
+@media only screen and (min-width: 992px) {
+    nav ul {
+        margin-right: 50px;
+    }
+
+    nav li {
+        padding-left: 30px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .navbrand-header {
+        display: none;
+    }
+}
