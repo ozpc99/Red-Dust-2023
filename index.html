@@ -11,8 +11,41 @@
 </head>
 
 <body>
-    <!--Loading Ellipsis Styling-->
     <style>
+        body {
+            margin: 0;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        #index-background {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            position: fixed;
+            z-index: -1;
+        }
+
+        .index-body {
+            position: absolute;
+            margin-top: 0;
+            margin-left: 0;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .btn-lg {
+            background-color: rgb(139, 14, 0);
+            color: #fff;
+        }
+
+        .btn-lg:hover {
+            background-color: rgb(102, 43, 33);
+            color: #fff;
+        }
+
+        /*Loading Ellipsis*/
         .dot1 {
             animation: visibility 3s linear infinite;
         }
@@ -94,63 +127,17 @@
                 opacity: 0;
             }
         }
-    </style>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Oswald', sans-serif;
-        }
-
-        #index-background {
-            width: 100vw;
-            height: 100vh;
-            object-fit: cover;
-            position: fixed;
-            z-index: -1;
-        }
-
-        .index-body {
-            position: absolute;
-            margin-top: 10px;
-            margin-left: 10px;
-            text-align: center;
-        }
-    </style>
-
-    <style>
-        .btn-lg {
-            background-color: rgb(139, 14, 0);
-            color: #fff;
-        }
-
-        .btn-lg:hover {
-            background-color: rgb(102, 43, 33);
-            color: #fff;
-        }
 
         .loading {
             pointer-events: none;
         }
     </style>
-    <style>
-        @media only screen and (max-width: 992px) {
-            .index-body {
-                position: absolute;
-                margin-top: 0;
-                margin-left: 0;
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%, -50%);
-                text-align: center;
-            }
-        }
-    </style>
 
     <video id="index-background" src="assets/videos/index-bg.mp4" autoplay muted loop></video>
-    
+
     <div class="index-body">
 
-        <img src="assets/images/logo-static.png" height="200px" alt="Red Dust 2023 Logo">
+        <img src="assets/images/logo-static.png" height="200px" alt="Red Dust 2023 Logo" id="logo">
         <br>
         <button type="button" id="btnEnter" class="btn btn-lg mb-2 mt-4" onclick="enter(); loading()">
             Enter
@@ -158,7 +145,6 @@
 
         <div class="d-none" id="loading">
             <button type="button" class="btn btn-lg mb-2 mt-4 loading">
-                <i class="fa-solid fa-gear fa-spin"></i>
                 Loading<span class="dot1">.</span><span class="dot2">.</span><span class="dot3">.</span>
             </button>
         </div>
@@ -181,6 +167,7 @@
             loading.classList.remove("d-none");
             const btnEnter = document.getElementById("btnEnter");
             btnEnter.classList.add("d-none");
+            document.getElementById("logo").src = "assets/images/logo.gif";
         }
         function loading() {
             let timeout;
