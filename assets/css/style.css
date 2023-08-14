@@ -1,15 +1,11 @@
-/*Fonts
-- Oswald
-- Ysabeau SC
-- Amatic SC
-*/
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Oswald:wght@200;300;400;500;600;700&family=Ysabeau+SC:wght@1;100;200;300;400;500;600;700;800;900;1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700');
 
 :root {
     /*Colour Pallet*/
     --bg-color-1: rgb(189, 181, 155);
     --bg-color-2: rgb(217, 211, 191);
-    --bg-color-3: rgb(255, 248, 224); 
+    --bg-color-3: rgb(230, 223, 202);
+    --bg-color-4: rgb(255, 248, 224);
     --theme-color-1: rgb(245, 207, 129);
     --theme-color-2: rgb(255, 193, 73);
     --theme-color-3: rgb(218, 112, 49);
@@ -47,9 +43,11 @@ body a:hover {
     border: solid rgba(0, 0, 0, 0.15);
     border-width: 1px 0;
     box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
-    inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+        inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
 }
-.divider::after, ::before {
+
+.divider::after,
+::before {
     box-sizing: border-box;
 }
 
@@ -96,6 +94,7 @@ nav {
 .navbar-toggler {
     border: none !important;
 }
+
 .navbar-toggler:focus {
     outline: none !important;
     box-shadow: none !important;
@@ -130,7 +129,6 @@ nav {
 /*Line-Up*/
 #lineup-container {
     margin: 10px 10px 10px 10px;
-    font-family: 'Oswald', sans-serif;
     background-color: var(--bg-color-2);
     border: double 10px #222;
 }
@@ -138,18 +136,6 @@ nav {
 .lineup {
     text-align: center;
     margin-bottom: 20px;
-}
-
-.lineup-h1 {
-    font-family: 'Oswald', sans-serif;
-}
-
-.lineup-body {
-    font-family: 'Ysabeau SC', sans-serif;
-}
-
-.lineup-body ul {
-    font-family: sans-serif;
 }
 
 .lineup ul {
@@ -184,6 +170,11 @@ nav {
 .info a {
     color: black;
     text-decoration: none;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.7);
+    height: fit-content;
 }
 
 /*Parking Bullet Point Colours*/
@@ -229,6 +220,11 @@ footer {
 
 .form-check-label {
     pointer-events: none;
+}
+
+.table {
+    --bs-table-bg: var(--bg-color-2);
+    --bs-table-border-color: #000;
 }
 
 /*Media Queries*/
