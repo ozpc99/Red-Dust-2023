@@ -38,3 +38,10 @@ function cog() {
   cog.classList.toggle("fa-spin");
   cog.classList.toggle("fa-spin-reverse");
 }
+
+/**
+ * Red Dust Trust: Amount Raised
+ */
+const amountRaised = 256840; //CHANGE AMOUNT RAISED HERE!
+let displayAmountRaised = document.getElementById("charity-amount-raised");
+displayAmountRaised.innerText = `£${amountRaised.toLocaleString("en-US")}!`;
