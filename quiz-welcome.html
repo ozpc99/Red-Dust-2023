@@ -12,14 +12,14 @@
 
 <body>
     <div class="start-screen text-center">
-        <img src="assets/images/logo.gif" height="150px">
+        <img src="assets/images/logo.gif" height="150" alt="Red Dust 2023 Animated Logo">
         <h1>The Red Dust Music Quiz</h1>
         <form>
             <div>
                 <label for="username">Enter Your Name:</label>
                 <br>
-                <input type="text" name="username" class="form-control mb-3" required oninvalid="this.setCustomValidity('Please Enter Your Name')"
-                    oninput="this.setCustomValidity('')" class="mb-3">
+                <input type="text" name="username" class="form-control mb-3" id="username" required
+                    oninvalid="this.setCustomValidity('Please Enter Your Name')" oninput="this.setCustomValidity('')">
             </div>
             <button class="btn btn-lg btn-primary" type="submit">Continue</button>
         </form>
