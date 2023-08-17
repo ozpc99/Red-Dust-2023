@@ -124,7 +124,7 @@ nav {
 
 
 /*Line-Up*/
-#lineup-container {
+.lineup-container {
     margin: 10px 10px 10px 10px;
     background-color: var(--bg-color-2);
     border: double 10px #222;
