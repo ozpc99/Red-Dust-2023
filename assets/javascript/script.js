@@ -26,7 +26,7 @@ var x = setInterval(function () {
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countdown").innerHTML = "Thanks 2023! We had a blast!";
+    document.getElementById("countdown").innerHTML = `<h6>Thanks 2023! We had a blast!</h6`;
   }
 }, 1000);
 
@@ -43,5 +43,5 @@ function cog() {
  * Red Dust Trust: Amount Raised
  */
 const amountRaised = 256840; //CHANGE AMOUNT RAISED HERE!
-let displayAmountRaised = document.getElementById("charity-amount-raised");
+var displayAmountRaised = document.getElementById("charity-amount-raised");
 displayAmountRaised.innerText = `£${amountRaised.toLocaleString("en-US")}!`;

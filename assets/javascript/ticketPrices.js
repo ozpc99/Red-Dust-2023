@@ -1,5 +1,4 @@
-/** 
- * Ticket Price Constants:
+/* Ticket Price Constants:
  * !CHANGE TICKET PRICES HERE!
  */
 const adult = { weekendPrice: 100, dayPrice: 55 };
@@ -16,7 +15,7 @@ const liveInVehicle = { price: 50 };
 const postageFee = { price: 3.99 };
 
 /**
- * Displays Postage Price in Paper Tickets info <li>
+ * Displays Postage Price in Paper Tickets info
  */
 document.getElementById("postagePrice").innerText = `£${postageFee.price}`;
 
@@ -44,7 +43,7 @@ if (infant.dayPrice === 0) {
   infantDayPrice.innerText = "FREE"; //Displays: 'FREE' if Infant Day Ticket Price = 0
 } else {
   infantDayPrice.innerText = `£${infant.dayPrice}`;
-};
+}
 
 document.getElementById("parkingPrice").innerText = `£${parking.price}`;
 document.getElementById("campingPrice").innerText = `£${camping.price}`;
@@ -67,12 +66,12 @@ if (infant.weekendPrice === 0) {
   document.getElementById("formInfantWeekendPrice").innerText = "FREE";
 } else {
   document.getElementById("formInfantWeekendPrice").innerText = `£${infant.weekendPrice}`;
-};
+}
 if (infant.dayPrice === 0) {
   document.getElementById("formInfantDayPrice").innerText = "FREE";
 } else {
   document.getElementById("formInfantDayPrice").innerText = `£${infant.dayPrice}`;
-};
+}
 
 document.getElementById("formParkingPrice").innerText = `£${parking.price}`;
 document.getElementById("formCampingPrice").innerText = `£${camping.price}`;
