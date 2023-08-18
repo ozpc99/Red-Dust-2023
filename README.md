@@ -413,7 +413,7 @@ For when the site is viewed on mobile, (where the UI is controlled via the user'
 # UI
 ## Navigation Bar
 
-<a src="https://www.youtube.com/watch?v=eiPjapDHHAU" target="_blank">View a video of the Navbar on YouTube</a>
+[View a video of the Navbar on YouTube](https://www.youtube.com/watch?v=eiPjapDHHAU)
 
 The navigation bar is intuitively positioned at the top of the screen. It is displayed on all primary site pages. It is built upon a Bootstrap nav-bar template and is designed to be fully responsive. On mobile devices, the navbar collapses into a menu with a Font Awesome `"fa-solid fa-gear"` icon which when clicked, toggles the navigation menu collapse. This gear icon is well suited to the festival's industrial theme and corresponds with the logo and graphics used across the site. On click, a JavaScript function adds a Font Awesome animation class: `"fa-spin"` to the icon which makes the gear icon spin. This indicates to the user that the menu is open and active.
 
@@ -439,9 +439,8 @@ There is also a link to Red Dust's Spotify profile which when clicked will open 
 The third column contains a small form with an email input field where users can sign up to the festival's newsletter. When the user submits their email address, they will be redirected to a confirmation page saying that they have successfully signed up to the newsletter. This is important as it provides immediate user feedback that their details have indeed been sent. The Form Submit API will send an email to the festival's email address with the subject of 'Newsletter Sign Up' and the body will contain the user's email address. From here, the festival organisers or site admin can manually add the user's email address to a database or contact list for them to receive future newsletters.
 
 #### See How The Newsletter Sign-up Form Works:
-<a src="https://www.youtube.com/watch?v=ZrCg9oNZghA" target="_blank">
-View a video of the Newsletter Sign-up Form on YouTube
-</a>
+
+[View a video of the Newsletter Sign-Up Form on YouTube](https://www.youtube.com/watch?v=ZrCg9oNZghA)
 
 ## Links
 The links featured across the site are all displayed in the Red Dust's dark red colour. When they are hovered over, they turn a lighter shade of red. This indicates to the user that this is a link and they are about to click it. The hover effect makes for an intuitive UI that provides user feedback.
@@ -463,8 +462,8 @@ The site features Bootstrap Collapses on many of its pages. This is to hide larg
 A collapsible section is intuitively indicated with a Font Awesome `fa-solid-fa-caret-right` icon to indicate to the user that this section can be collapsed when clicked. On click, a JavaScript function toggle adds the Font Awesome rotation class attribute: `fa-rotate-90` to the icon's classlist making the icon rotate 90° from a caret pointing right to pointing down, indicating that the contents of the collapse are open. It returns to a right-pointing caret when the collapse is closed.
 
 #### See How the Bootstrap Collapse Works:
-<a src="https://www.youtube.com/watch?v=YNt2vPuCvYM" target="_blank">View a video of the Bootstrap Collapse on YouTube</a>
 
+[View a video of the Bootstrap Collapse on YouTube](https://www.youtube.com/watch?v=YNt2vPuCvYM)
 
 # Application Features
 
@@ -482,7 +481,7 @@ In terms of psychology, it can be said that this makes the user value the conten
 
 #### See the Index Page in Action:
 
-<a src="https://www.youtube.com/watch?v=BdbAi-FrzDM" target="_blank">View a video of the Index Page on YouTube</a>
+[View a video of the Index Page on YouTube](https://www.youtube.com/watch?v=BdbAi-FrzDM)
 
 
 ## The Home Page (home.html)
@@ -500,9 +499,8 @@ On desktop, a 'Line-Up' button is displayed because the hero takes up the full v
 On mobile view, this button is hidden because the line-up is already in view on those devices.
 
 #### See the Hero Image Carousel in Action:
-<a src="https://www.youtube.com/watch?v=vyHcAeZ8FH0" target="_blank">
-View a video of the Image Carousel on YouTube
-</a>
+
+[View a video of the Image Carousel on YouTube](https://www.youtube.com/watch?v=vyHcAeZ8FH0)
 
 ### Line-Up
 ![Line-Up](docs/screenshots/lineup.png)
@@ -552,7 +550,8 @@ On mobile, this image is hidden to improve viewing and layout.
 ![Contact Form Mobile View](docs/screenshots/contact-mobile.png)
 
 #### See How the Contact Form Works:
-<a src="https://www.youtube.com/watch?v=rRmIPMZ1bOo" target="_blank">View a video of the Contact Form on YouTube</a>
+
+[View a video of the Contact Form on YouTube](https://www.youtube.com/watch?v=rRmIPMZ1bOo)
 
 ## Tickets Page
 
@@ -574,9 +573,7 @@ When these changes are made, the HTML will automatically display whichever value
 
 #### See How the Ticket Prices Work with JavaScript:
 
-<a src="https://www.youtube.com/watch?v=RdmxO2o5EeE&t=2s" target="_blank">
-View a video of the Ticket Prices and how they work, on YouTube
-</a>
+[View a video of the Ticket Prices and how they work, on YouTube](https://www.youtube.com/watch?v=RdmxO2o5EeE&t=2s)
 
 ### Book Tickets Form
 If users want to book tickets online, there is a form to do just that. The 'Book Tickets' button toggles a Bootstrap collapse to open the form. From there, users will submit their contact details and select the type and quantity of tickets from the dropdown selection field. If they wish to purchase add-ons they can click on the toggle switch next to each add-on category and select the quantity from the dropdown selection field collapsed below it. If the user opts for paper tickets instead of e-tickets they can click on the toggle switch next to e-tickets to disable it and the 'Paper Tickets' toggle switch will become active. When the user submits the form they are redirected to a confirmation page providing immediate user feedback that their booking has indeed been sent. The FormSubmit API gathers the information from the form and sends an email with the subject of 'Ticket Order' and the body containing a table with the user's submitted details and ticket selection to the festival's email address. From here, the festival organisers can add this information to a database and reply to the user to take a payment.
