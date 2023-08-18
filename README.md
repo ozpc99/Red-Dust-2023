@@ -375,20 +375,20 @@ The mockups were created using [smartmockups.com](https://smartmockups.com/)
 ## Colour Palette
 The following colours were chosen to reflect the festival's theme of being held on the site of a former steelworks. The reds, oranges and yellows represent the fire and molten iron found within the forge. The beige colours represent the land and the dirt surrounding the site. The green represents the site's surrounding countryside and natural beauty.
 
-- Beige 1: rgb(189, 181, 155) <span style="color: rgb(189, 181, 155)">◼</span>
-- Beige 2: rgb(217, 211, 191) <span style="color: rgb(217, 211, 191)">◼</span>
-- Beige 3: rgb(230, 223, 202) <span style="color: rgb(230, 223, 202)">◼</span>
-- Beige 4: rgb(255, 248, 224) <span style="color: rgb(255, 248, 224)">◼</span>
+- <span style="color: rgb(189, 181, 155)">Beige 1:</span> rgb(189, 181, 155)
+- <span style="color: rgb(217, 211, 191)">Beige 2:</span> rgb(217, 211, 191)
+- <span style="color: rgb(230, 223, 202)">Beige 3:</span> rgb(230, 223, 202)
+- <span style="color: rgb(255, 248, 224)">Beige 4:</span> rgb(255, 248, 224)
 
-- Yellow 1: rgb(245, 207, 129) <span style="color: rgb(245, 207, 129)">◼</span>
-- Yellow 2: rgb(255, 193, 73) <span style="color: rgb(255, 193, 73)">◼</span>
+- <span style="color: rgb(245, 207, 129)">Yellow 1:</span> rgb(245, 207, 129)
+- <span style="color: rgb(255, 193, 73)">Yellow 2:</span> rgb(255, 193, 73)
 
-- Orange 1: rgb(218, 112, 49) <span style="color: rgb(218, 112, 49)">◼</span>
-- Orange 2: rgb(188, 73, 35) <span style="color: rgb(188, 73, 35)">◼</span>
+- <span style="color: rgb(218, 112, 49)">Orange 1:</span> rgb(218, 112, 49)
+- <span style="color: rgb(188, 73, 35)">Orange 2:</span> rgb(188, 73, 35) 
 
-- Red 1: rgb(139, 14, 0) <span style="color: rgb(139, 14, 0)">◼</span>
-- Red 2: rgb(102, 43, 33) <span style="color: rgb(102, 43, 33)">◼</span>
-- Green: rgb(93, 150, 122) <span style="color: rgb(93, 150, 122)">◼</span>
+- <span style="color: rgb(139, 14, 0)">Red 1:</span> rgb(139, 14, 0) 
+- <span style="color: rgb(102, 43, 33)">Red 2:</span> rgb(102, 43, 33)
+- <span style="color: rgb(93, 150, 122)">Green:</span> rgb(93, 150, 122) 
 
 ## Logo
 
@@ -413,7 +413,7 @@ For when the site is viewed on mobile, (where the UI is controlled via the user'
 # UI
 ## Navigation Bar
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/eiPjapDHHAU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<a src="https://www.youtube.com/watch?v=eiPjapDHHAU" target="_blank">View a video of the Navbar on YouTube</a>
 
 The navigation bar is intuitively positioned at the top of the screen. It is displayed on all primary site pages. It is built upon a Bootstrap nav-bar template and is designed to be fully responsive. On mobile devices, the navbar collapses into a menu with a Font Awesome `"fa-solid fa-gear"` icon which when clicked, toggles the navigation menu collapse. This gear icon is well suited to the festival's industrial theme and corresponds with the logo and graphics used across the site. On click, a JavaScript function adds a Font Awesome animation class: `"fa-spin"` to the icon which makes the gear icon spin. This indicates to the user that the menu is open and active.
 
@@ -439,7 +439,9 @@ There is also a link to Red Dust's Spotify profile which when clicked will open 
 The third column contains a small form with an email input field where users can sign up to the festival's newsletter. When the user submits their email address, they will be redirected to a confirmation page saying that they have successfully signed up to the newsletter. This is important as it provides immediate user feedback that their details have indeed been sent. The Form Submit API will send an email to the festival's email address with the subject of 'Newsletter Sign Up' and the body will contain the user's email address. From here, the festival organisers or site admin can manually add the user's email address to a database or contact list for them to receive future newsletters.
 
 #### See How The Newsletter Sign-up Form Works:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZrCg9oNZghA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<a src="https://www.youtube.com/watch?v=ZrCg9oNZghA" target="_blank">
+View a video of the Newsletter Sign-up Form on YouTube
+</a>
 
 ## Links
 The links featured across the site are all displayed in the Red Dust's dark red colour. When they are hovered over, they turn a lighter shade of red. This indicates to the user that this is a link and they are about to click it. The hover effect makes for an intuitive UI that provides user feedback.
@@ -461,8 +463,8 @@ The site features Bootstrap Collapses on many of its pages. This is to hide larg
 A collapsible section is intuitively indicated with a Font Awesome `fa-solid-fa-caret-right` icon to indicate to the user that this section can be collapsed when clicked. On click, a JavaScript function toggle adds the Font Awesome rotation class attribute: `fa-rotate-90` to the icon's classlist making the icon rotate 90° from a caret pointing right to pointing down, indicating that the contents of the collapse are open. It returns to a right-pointing caret when the collapse is closed.
 
 #### See How the Bootstrap Collapse Works:
+<a src="https://www.youtube.com/watch?v=YNt2vPuCvYM" target="_blank">View a video of the Bootstrap Collapse on YouTube</a>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/YNt2vPuCvYM?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 # Application Features
 
@@ -480,7 +482,8 @@ In terms of psychology, it can be said that this makes the user value the conten
 
 #### See the Index Page in Action:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/BdbAi-FrzDM?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<a src="https://www.youtube.com/watch?v=BdbAi-FrzDM" target="_blank">View a video of the Index Page on YouTube</a>
+
 
 ## The Home Page (home.html)
 
@@ -497,7 +500,9 @@ On desktop, a 'Line-Up' button is displayed because the hero takes up the full v
 On mobile view, this button is hidden because the line-up is already in view on those devices.
 
 #### See the Hero Image Carousel in Action:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/vyHcAeZ8FH0?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<a src="https://www.youtube.com/watch?v=vyHcAeZ8FH0" target="_blank">
+View a video of the Image Carousel on YouTube
+</a>
 
 ### Line-Up
 ![Line-Up](docs/screenshots/lineup.png)
@@ -547,7 +552,7 @@ On mobile, this image is hidden to improve viewing and layout.
 ![Contact Form Mobile View](docs/screenshots/contact-mobile.png)
 
 #### See How the Contact Form Works:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rRmIPMZ1bOo?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<a src="https://www.youtube.com/watch?v=rRmIPMZ1bOo" target="_blank">View a video of the Contact Form on YouTube</a>
 
 ## Tickets Page
 
@@ -569,7 +574,9 @@ When these changes are made, the HTML will automatically display whichever value
 
 #### See How the Ticket Prices Work with JavaScript:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/RdmxO2o5EeE?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<a src="https://www.youtube.com/watch?v=RdmxO2o5EeE&t=2s" target="_blank">
+View a video of the Ticket Prices and how they work, on YouTube
+</a>
 
 ### Book Tickets Form
 If users want to book tickets online, there is a form to do just that. The 'Book Tickets' button toggles a Bootstrap collapse to open the form. From there, users will submit their contact details and select the type and quantity of tickets from the dropdown selection field. If they wish to purchase add-ons they can click on the toggle switch next to each add-on category and select the quantity from the dropdown selection field collapsed below it. If the user opts for paper tickets instead of e-tickets they can click on the toggle switch next to e-tickets to disable it and the 'Paper Tickets' toggle switch will become active. When the user submits the form they are redirected to a confirmation page providing immediate user feedback that their booking has indeed been sent. The FormSubmit API gathers the information from the form and sends an email with the subject of 'Ticket Order' and the body containing a table with the user's submitted details and ticket selection to the festival's email address. From here, the festival organisers can add this information to a database and reply to the user to take a payment.
@@ -579,10 +586,6 @@ The ticket prices are displayed in the form input labels the same way as with th
 Certain input fields in the form such as the contact details (name, email and phone) and the confirmation checkbox have a `required` attribute to ensure the user submits all necessary details. 
 
 The dropdown selection fields for selecting the ticket type and quantity make use of JavaScript to insert the total price for each ticket based on the quantity selected into an empty field next to each input. This provides user feedback and lets the user know how much they are going to be spending. The function calculates the amount by multiplying the ticket price variable's numerical value by the value inputted by the user in the dropdown selection field. It then inserts the total into the empty price field.
-
-#### See how the Ticket Quantity Price Multiplier works with JavaScript:
-
-
 
 #### Future Features:
 In future, the ticket booking form will feature a readonly input field displaying the total cost when all user selections have been added up.
@@ -760,7 +763,7 @@ See documentation of the manual testing process below:
         </td>
         <td>Loaded the site from the primary domain to view index.html</td>
         <td>The video background loaded correctly. It autoplays on loop on mute and controls are not displayed. It fills the entire viewport.</td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
     <tr>
         <td>
@@ -773,7 +776,7 @@ See documentation of the manual testing process below:
         </td>
         <td>Loaded the page and clicked the Enter button.</td>
         <td>The button was displayed in the center of the screen. The CSS hover effect works correctly. When clicked, the loading animation played and the logo became animated. After 5 seconds, I was redirected to the home page.</td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
     <tr>
         <td>
@@ -782,7 +785,7 @@ See documentation of the manual testing process below:
         <td>The logo will be displayed in the center of the screen. It will become animated when the Enter button is clicked.</td>
         <td>Loaded the page and clicked the enter button.</td>
         <td>The logo was displayed in the center of the screen. When the enter button was clicked, it became animated.</td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
     <tr>
         <td>
@@ -800,7 +803,7 @@ See documentation of the manual testing process below:
         Timer displays message once date is surpassed.
         Timer and dates are hidden on tablet and mobile.
         </td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
     <tr>
         <td>
@@ -809,7 +812,7 @@ See documentation of the manual testing process below:
         <td>When each link is clicked, the user will be redirected to the corresponding page. When the logo gif is clicked, the user will be redirected to the home page.</td>
         <td>Clicked each link in turn, clicked each link from all pages. Clicked the logo gif from all pages.</td>
         <td>The navigation links redirect to the correct page when clicked. The logo gif redirects to the home page when clicked.</td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
     <tr>
         <td>
@@ -818,7 +821,7 @@ See documentation of the manual testing process below:
         <td>When hovering over each link, the link text will be underlined and the colour will change to a darker shade of red. When each link is active, the link corresponding to the current page in view will also be underlined and the colour will change to a darker shade of red.</td>
         <td>Hovered over each link and clicked each link in turn across all pages.</td>
         <td>The link was underlined and changed color as expected.</td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
     <tr>
         <td>
@@ -830,7 +833,7 @@ See documentation of the manual testing process below:
         The navbar toggler was displayed correctly and toggled the navigation links when clicked.
         The Font Awesome spin animation was applied and toggled the animation on/off onclick.
         </td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
     <tr>
         <td>
@@ -841,7 +844,7 @@ See documentation of the manual testing process below:
         </td>
         <td>Viewed the carousel on desktop and opened Chrome Dev Tools to view on a range of mobile devices.</td>
         <td>The carousel autoplayed as expected and resized responsively according to the device viewport size.</td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
     <tr>
         <td>
@@ -852,7 +855,7 @@ See documentation of the manual testing process below:
         </td>
         <td>Viewed the carousel on desktop and opened Chrome Dev Tools to view on a range of mobile devices.</td>
         <td>The hero caption resized responsively and the Line-Up button was hidden on tablet and mobile.</td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
     <tr>
         <td>
@@ -861,7 +864,7 @@ See documentation of the manual testing process below:
         <td>Line-Up content will display as two columns on desktop and tablet and a single column on mobile. It will feature a video background</td>
         <td>Viewed the line-up section on desktop and opened Chrome Dev Tools to view on a range of mobile devices.</td>
         <td>Line-Up content was displayed as two columns on desktop and tablet and a single column on mobile. The video background was displayed correctly.</td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
     <tr>
         <td>
@@ -874,7 +877,7 @@ See documentation of the manual testing process below:
         <td>Viewed the supplementary content section on desktop and opened Chrome Dev Tools to view on a range of mobile devices.
         </td>
         <td>The content displayed as two columns on desktop and tablet and a single column on mobile.</td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     <tr>
         <td>
             <strong>Red Dust Music Quiz 'Take Quiz' Button</strong>
@@ -882,7 +885,7 @@ See documentation of the manual testing process below:
         <td>When hovered over, the button will turn a darker shade of red and when clicked, will take the user to the Quiz Welcome page in a new tab.</td>
         <td>Hovered over and clicked the button.</td>
         <td>The button changed colour when hovered over and opened the Quiz Welcome Page in a new tab when clicked.</td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
     <tr>
         <td>
@@ -892,7 +895,7 @@ See documentation of the manual testing process below:
         </td>
         <td>Hovered over and clicked the button.</td>
         <td>The button turned a darker shade of red when hovered over. When clicked, the Red Dust Radio- Rave page opened in a new tab.</td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
     <tr>
         <td>
@@ -910,7 +913,7 @@ See documentation of the manual testing process below:
         </td>
         <td>The iframe displayed correctly with rounded corners and resized correctly when viewed on mobile. The buttons function correctly and allow for play/pause and track selection. The link to the playlist opened Spotify Web Player in a new tab. 
         </td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
     <tr>
         <td>
@@ -920,7 +923,7 @@ See documentation of the manual testing process below:
         </td>
         <td>Hovered over and clicked the button.</td>
         <td>The button turned a darker shade of red when hovered over. When clicked, the Red Dust Radio- Rock page opened in a new tab.</td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
     <tr>
         <td>
@@ -938,7 +941,7 @@ See documentation of the manual testing process below:
         </td>
         <td>The iframe displayed correctly with rounded corners and resized correctly when viewed on mobile. The buttons function correctly and allow for play/pause and track selection. The link to the playlist opened Spotify Web Player in a new tab. 
         </td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
     <tr>
         <td>
@@ -947,7 +950,7 @@ See documentation of the manual testing process below:
         <td>The labels on the contact form will have Bootstrap's form-floating class applied.</td>
         <td>Clicked on each input field.</td>
         <td>The Bootstrap floating labels functioned correctly.</td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
     <tr>
         <td>
@@ -957,7 +960,7 @@ See documentation of the manual testing process below:
         </td>
         <td>Filled out and submitted the form. Checked the email inbox.</td>
         <td>Was redirected to the confirmation page. The email appeared in the inbox.</td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
     <tr>
         <td>
@@ -969,7 +972,7 @@ See documentation of the manual testing process below:
         </td>
         <td>Viewed the contact form on desktop and opened Chrome Dev Tools to view on mobile.</td>
         <td>The image displayed correctly with rounded corners on desktop and was hidden when viewed on mobile.</td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
     <tr>
         <td>
@@ -979,7 +982,7 @@ See documentation of the manual testing process below:
         </td>
         <td>Clicked on the ticket prices heading.</td>
         <td>The ticket prices table collapsed.</td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
     <tr>
         <td>
@@ -988,7 +991,7 @@ See documentation of the manual testing process below:
         <td>The add-ons heading will toggle a collapse when clicked.</td>
         <td>Clicked on the add-ons heading.</td>
         <td>The add-ons table collapsed.</td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
     <tr>
         <td>
@@ -1000,7 +1003,7 @@ See documentation of the manual testing process below:
         <td>The ticket prices displayed correctly and updated when their values were changed in the script.
         The table resized correctly when viewed on a range of devices.
         </td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
     <tr>
         <td>
@@ -1009,7 +1012,7 @@ See documentation of the manual testing process below:
         <td>The 'Buy Tickets' button will toggle the booking form to collapse when clicked.</td>
         <td>Clicked the button.</td>
         <td>The form collapsed.</td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
     <tr>
         <td>
@@ -1018,7 +1021,7 @@ See documentation of the manual testing process below:
         <td>The Full Weekender subheading will toggle the full weekender ticket section to collapse when clicked.</td>
         <td>Clicked the subheading.</td>
         <td>The full weekender ticket section collapsed.</td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
     <tr>
         <td>
@@ -1027,7 +1030,7 @@ See documentation of the manual testing process below:
         <td>The Day Ticket subheading will toggle the day ticket section to collapse when clicked.</td>
         <td>Clicked the subheading.</td>
         <td>The day ticket section collapsed.</td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
     <tr>
         <td>
@@ -1036,7 +1039,7 @@ See documentation of the manual testing process below:
         <td>The Add-ons subheading will toggle the add-ons section to collapse when clicked.</td>
         <td>Clicked the subheading.</td>
         <td>The add-ons section collapsed.</td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
     <tr>
         <td>
@@ -1046,7 +1049,7 @@ See documentation of the manual testing process below:
         <td>Clicked the toggle switch multiple times.</td>
         <td>The e-tickets switch became inactive and the paper tickets switch became active. When pressed again, the e-tickets switch became active and the paper tickets switch became inactive. The paper tickets switch did not allow for pointer events.
         </td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
     <tr>
         <td>
@@ -1057,7 +1060,7 @@ See documentation of the manual testing process below:
         </td>
         <td>Filled out the form and clicked the button. Checked the email inbox.</td>
         <td>I was redirected to the booking confirmation page. The email appeared in the inbox with the correct details I had submitted from the form.</td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
     <tr>
         <td>
@@ -1066,7 +1069,7 @@ See documentation of the manual testing process below:
         <td></td>
         <td></td>
         <td></td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
     <tr>
         <td>
@@ -1076,7 +1079,7 @@ See documentation of the manual testing process below:
         <td>Clicked all collapse subheadings.</td>
         <td>All collapses collapsed. All corresponding caret-right icons rotated 90° according to which collapse was open.
         </td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
     <tr>
         <td>
@@ -1085,7 +1088,7 @@ See documentation of the manual testing process below:
         <td>The challenge 25 subheading will toggle a collapse containing the Vimeo iframe when clicked.</td>
         <td>Clicked the subheading.</td>
         <td>The content collapsed.</td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
     <tr>
         <td>
@@ -1096,7 +1099,7 @@ See documentation of the manual testing process below:
         <td>Viewed the iframe and clicked play. Opened Dev Tools to view on a range of devices.</td>
         <td>The video played correctly and all buttons worked. The iframe resized responsively when viewed on multiple devices.
         </td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
     <tr>
         <td>
@@ -1105,7 +1108,7 @@ See documentation of the manual testing process below:
         <td>The link will open Go North East's homepage in a new tab when clicked.</td>
         <td>Clicked the link.</td>
         <td>The Go North East homepage opened in a new tab.</td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
     <tr>
         <td>
@@ -1114,7 +1117,7 @@ See documentation of the manual testing process below:
         <td>The link will open the Go North East App Download page in a new tab when clicked.</td>
         <td>Clicked the link.</td>
         <td>The Go North East app download page opened in a new tab.</td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
     <tr>
         <td>
@@ -1123,7 +1126,7 @@ See documentation of the manual testing process below:
         <td>When the The continue button is clicked, the user's name will be stored as an object in local storage. The page will redirect to the Quiz start page and display the user's name.</td>
         <td>Filled in the form and clicked the button.</td>
         <td>The page redirected to the quiz start screen and the name I entered was displayed.</td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
     <tr>
         <td>
@@ -1133,7 +1136,7 @@ See documentation of the manual testing process below:
         <td>Filled in the form on the welcome page with various different names and clicked the button to go to the start screen.
         </td>
         <td>The name I had entered was displayed correctly on the start screen every time.</td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
      <tr>
         <td>
@@ -1142,7 +1145,7 @@ See documentation of the manual testing process below:
         <td>When the button is clicked, the start screen will be hidden and the first question will be displayed.</td>
         <td>Clicked the button.</td>
         <td>The start screen disappeared and the first question appeared.</td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
     <tr>
         <td>
@@ -1151,7 +1154,7 @@ See documentation of the manual testing process below:
         <td>When the button is clicked, the user will be taken back to the quiz welcome screen.</td>
         <td>Clicked the button.</td>
         <td>I was redirected back to the quiz welcome screen.</td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
     <tr>
         <td>
@@ -1161,7 +1164,7 @@ See documentation of the manual testing process below:
         <td>Viewed the screen after having clicked the 'Howay!' button to start the quiz. Pressed the 'Next' button to view all questions.
         </td>
         <td>The questions displayed correctly every time and the answer options allowed me to select them.</td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
     <tr>
         <td>
@@ -1170,7 +1173,7 @@ See documentation of the manual testing process below:
         <td>The answer options will have a CSS hover effect to highlight the answer the user is hovering over. When clicked, the correct answer will be highlighted green and the incorrect answer will be highlighted red. The correct answer will increment the scoreCount until the loop has reached the end of the quizArray.</td>
         <td>Clicked on correct and incorrect answers.</td>
         <td>The correct answer was highlighted green. The incorrect answer was highlighted red.</td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
     <tr>
         <td>
@@ -1180,7 +1183,7 @@ See documentation of the manual testing process below:
         </td>
         <td>Clicked the next button for every question.</td>
         <td>The next question was displayed.</td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
     <tr>
         <td>
@@ -1192,7 +1195,7 @@ See documentation of the manual testing process below:
         </td>
         <td>The score was displayed correctly each time. The message and the colour of the score changed depending on how many answers I got right.
         </td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
     <tr>
         <td>
@@ -1201,7 +1204,7 @@ See documentation of the manual testing process below:
         <td>When the restart button is clicked, the user will be redirected back to the quiz start screen.</td>
         <td>Clicked the button.</td>
         <td>I was redirected back to the quiz start screen.</td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
     <tr>
         <td>
@@ -1210,7 +1213,7 @@ See documentation of the manual testing process below:
         <td>When the home button is clicked, the user will be redirected back to the home page.</td>
         <td>Clicked the button.</td>
         <td>I was redirected to the home page.</td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
     <tr>
         <td>
@@ -1219,7 +1222,7 @@ See documentation of the manual testing process below:
         <td>Content in the footer will display as 3 columns on desktop and tablet and one column on mobile.</td>
         <td>Viewed the footer on desktop and opened Dev Tools to view on a range of mobile devices.</td>
         <td>The footer was displayed as 3 columns on desktop and a single column on mobile.</td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
     <tr>
         <td>
@@ -1228,7 +1231,7 @@ See documentation of the manual testing process below:
         <td>When the email address link is clicked, the user's default email client will open with a blank email with the festival's email address in the address bar.</td>
         <td>Clicked the link.</td>
         <td>My default mail client opened with a blank email and the festival's email address in the address bar.</td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
     <tr>
         <td>
@@ -1237,7 +1240,7 @@ See documentation of the manual testing process below:
         <td>When the footer spotify link is clicked, the festival's Spotify profile will open in a new tab.</td>
         <td>Clicked the link.</td>
         <td>The festival's spotify profile opened in a new tab.</td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
     <tr>
         <td>
@@ -1247,7 +1250,7 @@ See documentation of the manual testing process below:
         </td>
         <td>Filled in the form and clicked the button.</td>
         <td>I was redirected to the newsletter sign up confirmation page. The email appeared in the email inbox.</td>
-        <td><input type="checkbox" checked style="pointer-events: none"></td>
+        <td>YES</td>
     </tr>
 </table>
 
